@@ -363,9 +363,19 @@ footer {
     }
     /*#endregion planning*****/
     /*#region testimonial*****/
+    #testimonial .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     #testimonial .card .img-cropper {
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 1rem;
+    }
+    #testimonial .card > .col:nth-child(2) > p:last-child  {
+        margin-top: 1rem
     }
     /*#endregion testimonial*****/
     /*#region working*****/
@@ -373,5 +383,23 @@ footer {
       grid-template-columns: repeat(1, 1fr);
     }
     /*#endregion working*****/
+
+
+
+    /*#region about us*****/
+    #about-us > div > div:last-child p {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    #about-us > div > div:last-child p + a {
+        margin-top: 2rem;
+        font-size: 1rem;
+        width: 60%;
+        text-align: center
+    }
+    #about-us > div > div:last-child p + a:before {
+        margin-right: 1rem;
+    }
+    /*#endregion about us*****/
   }
 }
