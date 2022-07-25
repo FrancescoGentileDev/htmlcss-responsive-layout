@@ -176,7 +176,6 @@ section:nth-child(even) {
     width:auto;
 }
 
-
 #testimonial .card > .col:nth-child(2){
     justify-content: center
 }
@@ -226,7 +225,7 @@ section:nth-child(even) {
 /*#region about-us*****/
 
 #about-us { 
-   line-height: 2rem;
+   line-height: 2.4rem;
 }
 
 #about-us .ab-text > *:not(:first-child) {
@@ -237,10 +236,27 @@ section:nth-child(even) {
   color: var(--brand-primary-color);
 }
 
+#about-us .ab-text {
+  font-size: 1.2rem;
+}
+
 #about-us img {
   border-radius: 50%;
 }
 
+#about-us .quotes {
+    font-size: 6rem;
+    color: var(--brand-primary-color);
+    position: absolute;
+    right: -30px;
+    top: -30px
+
+
+}
+
+#about-us > div > div:last-child {
+    position: relative;
+}
 #about-us > div > div:last-child p {
   color: var(--brand-primary-color);
   font-weight: bold;
