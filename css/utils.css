@@ -724,6 +724,15 @@ ul {
 }
 /*#endregion card*****/
 
+/*#region hide and show*****/
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+/*#endregion hide and show*****/
+
 /*#endregion UTILITIES */
 @media screen and (max-width: 576px) {
   /*XS EXTRA SMALL*/
@@ -1112,10 +1121,10 @@ ul {
   .show-on-lg {
     display: block;
   }
-  .hide-on-tablet {
+  .hide-on-pc {
     display: none;
   }
-  .show-on-tablet {
+  .show-on-pc {
     display: block;
   }
 }

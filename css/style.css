@@ -1,6 +1,5 @@
 body {
   font-family: "PT Sans", sans-serif;
-
 }
 
 a {
@@ -26,7 +25,6 @@ header {
   font-weight: bold;
 }
 
-
 /*#endregion header*****/
 
 /*#region general for section*****/
@@ -38,21 +36,18 @@ section:nth-child(even) {
   background-color: var(--brand-primary-color);
 }
 
-
-
 .card {
-    border-radius: 30px;
-    background-color: var(--brand-tertiary-color);
-  }
+  border-radius: 30px;
+  background-color: var(--brand-tertiary-color);
+}
 
-
-  .card-header {
-    padding: 0;
-    color: var(--brand-secondary-color);
+.card-header {
+  padding: 0;
+  color: var(--brand-secondary-color);
 }
 
 .container-lg:not(.header) {
-    padding: 0 50px
+  padding: 0 50px;
 }
 
 /*#endregion general for section*****/
@@ -62,6 +57,7 @@ section:nth-child(even) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  grid-auto-rows: max-content;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -71,59 +67,42 @@ section:nth-child(even) {
 }
 
 #hero .card:not(:first-child) {
-   text-align: center;
+  text-align: center;
 }
-#hero .card:not(:first-child) .card-header i{
-    font-size: 4rem;
-    margin-bottom: 1rem
+#hero .card:not(:first-child) .card-header i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 #hero .card-body {
-    color: rgb(107, 107, 107)
+  color: rgb(107, 107, 107);
 }
 /*#region first card large*****/
 
 #hero > *:first-child {
-    grid-column: 1 / span 2;
-    margin-bottom: 3rem;
-    padding-bottom: 0px;
-  }
+  grid-column: 1 / span 2;
+  padding-bottom: 0px;
+}
 #hero .apple {
-
-    margin-top: 2rem;
-    margin-left: 1rem;
-    padding: 4px 50px;
-    border-radius: 30px;
-    letter-spacing: 3px;
-    color: white;
-    background-color: var(--brand-secondary-color);
+  max-width: 70%;
+  margin-top: 2rem;
+  padding: 4px 20px;
+  border-radius: 30px;
+  letter-spacing: 3px;
+  color: white;
+  background-color: var(--brand-secondary-color);
 }
 #hero .apple::before {
-    font-family: "Font Awesome 6 brands";
-    content: "\f179" ;
-    margin-right: 5px;
-}
-
-#hero .phone {
-    position: relative;
-}
-
-#hero [src*="phone"] {
-    position: absolute;
-    bottom: -3rem;
-    right: 0;
+  font-family: "Font Awesome 6 brands";
+  content: "\f179";
+  margin-right: 5px;
 }
 /*#endregion first card large*****/
-
-
-
-
 
 /*#endregion hero*****/
 
 /*#region planning*****/
 #planning {
-  padding: 5rem;
 }
 
 #planning [src*="planning1"] {
@@ -131,24 +110,23 @@ section:nth-child(even) {
 }
 
 #planning .card {
-    background-color: white;
-
+  background-color: white;
 }
 
 #planning .card-body {
-    text-align: center;
-    font-weight: normal;
-    font-style: italic;
-    font-size: 0.9rem;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 /*#endregion planning*****/
 
 .button-arrow {
-    font-style: normal;
-    font-size: 30px;
-    border-radius: 50%;
-    padding: 10px 15px ;
-    background-color: var(--brand-primary-color)
+  font-style: normal;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 10px 15px;
+  background-color: var(--brand-primary-color);
 }
 
 /*#region testimonial*****/
@@ -160,32 +138,32 @@ section:nth-child(even) {
 }
 
 #testimonial .card {
-    background-color: var(--brand-primary-color);
-    color: white;
+  background-color: var(--brand-primary-color);
+  color: white;
 }
 
 #testimonial .card .img-cropper {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 #testimonial .card img {
-    display: inline;
-    margin: 0 auto;
-    margin-left: -25%;
-    height: 100%;
-    width:auto;
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
 }
 
-#testimonial .card > .col:nth-child(2){
-    justify-content: center
+#testimonial .card > .col:nth-child(2) {
+  justify-content: center;
 }
 
 #testimonial .card > .col:nth-child(2) > p:last-child {
-    font-size: 1.4rem;
-    margin-top: 3rem;
+  font-size: 1.4rem;
+  margin-top: 3rem;
 }
 /*#endregion testimonial*****/
 
@@ -201,34 +179,34 @@ section:nth-child(even) {
 }
 
 #working .card {
-    background-color: #fff;
+  background-color: #fff;
 }
 #working .card-header {
-    color: var(--brand-primary-color);
-    text-transform: capitalize;
+  color: var(--brand-primary-color);
+  text-transform: capitalize;
 }
 #working .card-header h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 #working .card-body {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 #working .button {
-    margin-top: 2rem;
-    background-color: var(--brand-primary-color);
-    color: white;
-    border-radius: 50px;
-    padding: 4px 40px;
+  margin-top: 2rem;
+  background-color: var(--brand-primary-color);
+  color: white;
+  border-radius: 50px;
+  padding: 4px 40px;
 }
 /*#endregion working*****/
 
 /*#region about-us*****/
 
-#about-us { 
-   line-height: 2.4rem;
+#about-us {
+  line-height: 2.4rem;
 }
 
 #about-us .ab-text > *:not(:first-child) {
@@ -248,17 +226,15 @@ section:nth-child(even) {
 }
 
 #about-us .quotes {
-    font-size: 6rem;
-    color: var(--brand-primary-color);
-    position: absolute;
-    right: -30px;
-    top: -30px
-
-
+  font-size: 6rem;
+  color: var(--brand-primary-color);
+  position: absolute;
+  right: -30px;
+  top: -30px;
 }
 
 #about-us > div > div:last-child {
-    position: relative;
+  position: relative;
 }
 #about-us > div > div:last-child p {
   color: var(--brand-primary-color);
@@ -278,29 +254,27 @@ section:nth-child(even) {
 }
 /*#endregion about-us*****/
 
-
 /*#region get started*****/
 #get-started {
-    color: white;
+  color: white;
 }
 
 #get-started {
-    justify-content: center;
+  justify-content: center;
 }
 #get-started h2 {
-    color: rgb(255, 195, 83);
-    margin-bottom: 1rem
+  color: rgb(255, 195, 83);
+  margin-bottom: 1rem;
 }
 #get-started a {
-    color: var(--brand-primary-color);
-    font-size: 1.5rem;
-    border-radius: 30px;
-    padding: 0.8rem 3rem;
-    margin: 1rem 0;
+  color: var(--brand-primary-color);
+  font-size: 1.5rem;
+  border-radius: 30px;
+  padding: 0.8rem 3rem;
+  margin: 1rem 0;
 }
 
 /*#endregion get started*****/
-
 
 /*#region footer*****/
 footer {
@@ -310,3 +284,40 @@ footer {
   text-align: center;
 }
 /*#endregion footer*****/
+
+@media screen {
+  @media (max-width: 768px) {
+    .fa-solid.fa-bars {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    #planning h2 {
+      font-size: 4rem;
+    }
+
+    #planning h2 + p {
+      margin-bottom: 3rem;
+    }
+
+    #working .card-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #hero [src*="phone"] {
+      position: relative;
+      width: 70%;
+      bottom: 0;
+      right: 0;
+    }
+    #hero .button {
+        margin-bottom: 1rem;
+        width: 50%;
+    }
+
+    #testimonial .card .img-cropper {
+        width: 150px;
+        height: 150px;
+    }
+  }
+}

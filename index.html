@@ -19,17 +19,17 @@
 <body>
 
     <!--#region header-->
-    <header class="p col">
-        <div class="container-lg container-xs row flex-between align-center header">
+    <header class="p col w-full">
+        <div class="container-lg row flex-between align-center header">
             <a><img src="img/logo.png" alt="logo"></a>
-            <ul class="row cg-2 align-center text-white hide-on-tablet hide-on-mobile hide">
+            <ul class="row cg-2 align-center text-white hide-on-tablet hide-on-mobile">
                 <li><a href="#">Planning</a></li>
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">About Us</a></li>
                 <li class="button btn-header text-black"><a>Get started</a></li>
-
             </ul>
+            <i class="fa-solid fa-bars hide show-on-tablet show-on-mobile"></i>
         </div>
         </div>
     </header>
@@ -45,16 +45,16 @@
                     <p>Get a demo application</p>
                 </div>
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row wrap">
+                        <div class="col col-12 col-md-6 col-lg-6">
                             <p class="text-align-left"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Ad aspernatur error est. Deleniti
                                 repellendus, totam dignissimos distinctio tempore </p>
 
                             <a href="#" class="button apple">App store</a>
                         </div>
-                        <div class="col-5 phone">
-                            <img src="img/phone.png" class="w-80" alt="hero">
+                        <div class="col col-12 col-md-6 phone">
+                            <img src="img/phone.png" class="w-full" alt="hero">
                         </div>
 
 
@@ -110,19 +110,19 @@
         <!--#region planning-->
         <section id="planning">
             <div class="container-lg">
-                <div class="row align-end flex-center cg-3">
-                    <div class="col no-grow col-6 ">
-                        <img src="img/planning1.png" class="w-80" alt="planning">
-                        <h2 class="text-white mb-6">Lorem Ipsum dolor sit</h2>
+                <div class="row wrap align-end flex-center cg-3">
+                    <div class="col col-md-5 col-12">
+                        <img src="img/planning1.png" class="w-full" alt="planning">
+                        <h2 class="text-white mb-6">Strategic planning</h2>
                         <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure minima esse
                             corporis! Corrupti
                             repellendus voluptatum dolore! Autem exercitationem veniam vero. Dicta quam temporibus
                             architecto earum repellat maiores rerum porro cum?</p>
                     </div>
-                    <div class="col no-grow col-4">
+                    <div class="col col-md-3 col-12">
                         <div class="card">
                             <div class="card-header text-align-center">
-                                <img src="img/planning2.png" class="w-80" alt="" srcset="">
+                                <img src="img/planning2.png" class="w-full" alt="" srcset="">
                                 <p class="text-black">App developement</p>
                             </div>
                             <div class="card-body">
@@ -147,7 +147,7 @@
                     business.Customer feedback is vital in
                     helping us to get it right.</p>
 
-                <div class="w-full card row cg-3">
+                <div class="card row cg-3">
                     <div class="col">
                         <div class="img-cropper">
                             <img src="./img/testimonial1.jpg" alt="" srcset="">
@@ -159,7 +159,7 @@
                         <p><strong>Tizio Caio</strong></p>
                     </div>
                 </div>
-                <div class="w-full card row cg-3">
+                <div class="card row cg-3">
                     <div class="col">
                         <div class="img-cropper">
                             <img src="./img/testimonial2.jpg" alt="" srcset="">
@@ -173,7 +173,7 @@
                     </div>
 
                 </div>
-                <div class="w-full card row cg-3">
+                <div class="card row cg-3">
                     <div class="col">
                         <div class="img-cropper">
                             <img src="./img/testimonial3.jpg" alt="" srcset="">
@@ -278,7 +278,7 @@
 
         <!--#region about us-->
         <section id="about-us">
-            <div class="container-lg row cg-6 flex-center ">
+            <div class="container-lg row cg-2 flex-center ">
                 <div class="col col-8 ab-text">
                     <h2 class="display-5">About us</h2>
                     <p>Sample text. Click to Egestas egestas fringilla phasellus faucibus scelerisque 
@@ -296,7 +296,7 @@
                         editing the text.
                     </p>
                 </div>
-                <div class="col col-2">
+                <div class="col col-4">
                     <img src="img/about.jpg" class="w-full" alt="about us">
                     <p>I help companies trincidunt tortor aliquam nulla
                         facilisi cras fermentum odio</p>
@@ -309,7 +309,7 @@
 
         <!--#region Get started-->
         <section id="get-started" class="row">
-            <div class="col-4 text-align-center">
+            <div class="col-md-4 col-9 text-align-center">
                 <p>GET STARTED</p>
                 <h3 class="display-6">Simple, Transparent Pricing</h2>
                     <h2 class="display-4">It's Free!</h2>
