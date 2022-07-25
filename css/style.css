@@ -1,5 +1,6 @@
 body {
   font-family: "PT Sans", sans-serif;
+
 }
 
 a {
@@ -50,9 +51,9 @@ section:nth-child(even) {
     color: var(--brand-secondary-color);
 }
 
-
-
-
+.container-lg:not(.header) {
+    padding: 0 50px
+}
 
 /*#endregion general for section*****/
 
@@ -61,6 +62,8 @@ section:nth-child(even) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 #hero > * {
   width: 100%;
