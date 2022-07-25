@@ -8,11 +8,15 @@ a {
     cursor: pointer;
 }
 
-
+:root {
+    --brand-primary-color: #9792e4;
+    --brand-secondary-color: #0084fd;
+    --brand-tertiary-color: #b5ddff;
+}
 
 /*#region header*****/
 header { 
-    background-color: #0084fd;
+    background-color: var(--brand-secondary-color);
 }
 
 .btn-header {
@@ -41,7 +45,7 @@ header {
 
 .card {
     border-radius: 30px;
-    background-color: #b5ddff;
+    background-color: var(--brand-tertiary-color);
 }
 
 
@@ -51,7 +55,7 @@ header {
 
 /*#region planning*****/
 #planning {
-    background-color: #9792e4;
+    background-color: var(--brand-primary-color);
     padding: 5rem;
 }
 /*#endregion planning*****/
@@ -61,6 +65,10 @@ header {
     margin-bottom: 5rem;
 }
 
-#planning .card {
+
+/*#region testimonial*****/
+#testimonial h2{
+    color: var(--brand-primary-color);
     
 }
+/*#endregion testimonial*****/
