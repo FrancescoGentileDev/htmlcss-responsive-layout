@@ -358,7 +358,7 @@
   padding: 0;
 }
 .p {
-  padding: 5px;
+  padding: 1rem;
 }
 .p-1 {
   padding: 10px;
@@ -621,6 +621,41 @@
 }
 
 /*#endregion text-color*****/
+
+/*#region button*****/
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    user-select: none;
+  }
+  .button:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+/*#endregion button*****/
+
+/*#region list*****/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/*#endregion list*****/
+
 
 /*#endregion UTILITIES */
 @media screen and (max-width: 576px) {
