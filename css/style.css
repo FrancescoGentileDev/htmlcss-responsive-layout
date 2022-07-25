@@ -123,11 +123,30 @@ section:nth-child(even) {
   padding: 5rem;
 }
 
-#planning img {
+#planning [src*="planning1"] {
   margin-bottom: 5rem;
 }
 
+#planning .card {
+    background-color: white;
+
+}
+
+#planning .card-body {
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9rem;
+}
 /*#endregion planning*****/
+
+.button-arrow {
+    font-style: normal;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px 15px ;
+    background-color: var(--brand-primary-color)
+}
 
 /*#region testimonial*****/
 #testimonial {
