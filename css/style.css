@@ -22,7 +22,10 @@ header {
 .btn-header {
   border-radius: 50px;
   background-color: white;
+  font-weight: bold;
 }
+
+
 /*#endregion header*****/
 
 /*#region general for section*****/
@@ -33,13 +36,30 @@ section {
 section:nth-child(even) {
   background-color: var(--brand-primary-color);
 }
+
+
+
+.card {
+    border-radius: 30px;
+    background-color: var(--brand-tertiary-color);
+  }
+
+
+  .card-header {
+    padding: 0;
+    color: var(--brand-secondary-color);
+}
+
+
+
+
+
 /*#endregion general for section*****/
 
 /*#region hero*****/
 #hero {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 340px;
   gap: 1.5rem;
 }
 #hero > * {
@@ -47,14 +67,54 @@ section:nth-child(even) {
   height: 100%;
 }
 
-#hero > *:first-child {
-  grid-column: 1 / span 2;
+#hero .card:not(:first-child) {
+   text-align: center;
+}
+#hero .card:not(:first-child) .card-header i{
+    font-size: 4rem;
+    margin-bottom: 1rem
 }
 
-.card {
-  border-radius: 30px;
-  background-color: var(--brand-tertiary-color);
+#hero .card-body {
+    color: rgb(107, 107, 107)
 }
+/*#region first card large*****/
+
+#hero > *:first-child {
+    grid-column: 1 / span 2;
+    margin-bottom: 3rem;
+    padding-bottom: 0px;
+  }
+#hero .apple {
+
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: 4px 50px;
+    border-radius: 30px;
+    letter-spacing: 3px;
+    color: white;
+    background-color: var(--brand-secondary-color);
+}
+#hero .apple::before {
+    font-family: "Font Awesome 6 brands";
+    content: "\f179" ;
+    margin-right: 5px;
+}
+
+#hero .phone {
+    position: relative;
+}
+
+#hero [src*="phone"] {
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+}
+/*#endregion first card large*****/
+
+
+
+
 
 /*#endregion hero*****/
 

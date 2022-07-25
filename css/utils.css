@@ -706,7 +706,20 @@ ul {
 .card {
   width: 100%;
   margin: auto;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
+  
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.card-body {
+  font-weight: bold;
+  line-height: 1.5rem;
   
 }
 /*#endregion card*****/
