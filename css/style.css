@@ -197,6 +197,30 @@ section:nth-child(even) {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+
+#working .card {
+    background-color: #fff;
+}
+#working .card-header {
+    color: var(--brand-primary-color);
+    text-transform: capitalize;
+}
+#working .card-header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#working .card-body {
+    font-weight: normal;
+}
+
+#working .button {
+    margin-top: 2rem;
+    background-color: var(--brand-primary-color);
+    color: white;
+    border-radius: 50px;
+    padding: 4px 40px;
+}
 /*#endregion working*****/
 
 /*#region about-us*****/
