@@ -624,9 +624,8 @@
 
 /*#region button*****/
   .button {
-    background-color: #4CAF50;
+    background-color: #ffffff;
     border: none;
-    color: white;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -637,13 +636,11 @@
     user-select: none;
   }
   .button:hover {
-    background-color: #3e8e41;
-    color: white;
+    background-color: #cfcfcf;
   }
   .button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    background-color: #8f8f8f;
+
   }
 /*#endregion button*****/
 
@@ -656,6 +653,14 @@ ul {
 }
 /*#endregion list*****/
 
+/*#region card*****/
+.card {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  
+}
+/*#endregion card*****/
 
 /*#endregion UTILITIES */
 @media screen and (max-width: 576px) {
@@ -1014,6 +1019,13 @@ ul {
   .show-on-sm {
     display: block;
   }
+  .hide-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: block;
+  }
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -1021,6 +1033,12 @@ ul {
     display: none;
   }
   .show-on-md {
+    display: block;
+  }
+  .hide-on-tablet {
+    display: none;
+  }
+  .show-on-tablet {
     display: block;
   }
 }
@@ -1032,6 +1050,12 @@ ul {
   .show-on-lg {
     display: block;
   }
+  .hide-on-tablet {
+    display: none;
+  }
+  .show-on-tablet {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1041,7 +1065,12 @@ ul {
   .show-on-xl {
     display: block;
   }
-
+  .hide-on-pc {
+    display: none;
+  }
+  .show-on-pc {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -1049,6 +1078,12 @@ ul {
     display: none;
   }
   .show-on-xxl {
+    display: block;
+  }
+  .hide-on-pc {
+    display: none;
+  }
+  .show-on-pc {
     display: block;
   }
 }
