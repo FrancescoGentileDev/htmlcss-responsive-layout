@@ -17,6 +17,7 @@ a {
 /*#region header*****/
 header {
   background-color: var(--brand-secondary-color);
+
 }
 
 .btn-header {
@@ -30,6 +31,59 @@ header {
 }
 
 /*#endregion header*****/
+
+/*#region menu*****/
+.menu {
+    position:absolute;
+    background: #007ff7;
+    z-index: 10;
+    right: -25%;
+    height: 100vh;
+    width: 25%;
+    top: 77px;
+    padding: 20px;
+    transition: right 0.5s linear;
+    color: white;
+}
+[type="checkbox"] {
+    display: none;
+}
+[type="checkbox"] + label {
+    position: absolute;
+    right: 15px;
+    transition: right 0.5s linear;
+}
+[type="checkbox"]:checked + label {
+   right: 20%
+}
+
+[type="checkbox"]:checked + label + .menu {
+    right: 0;
+}
+.menu ul {
+    list-style: none;
+    justify-content: space-around;
+}
+.nasconditore {
+    position:absolute;
+    background: rgb(0, 0, 0);
+    visibility: hidden;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    top: 77px;
+    left: -20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+[type="checkbox"]:checked + label + .menu + .nasconditore {
+visibility: visible;
+   opacity: 0.6;
+
+}
+/*#endregion menu*****/
+
 
 /*#region general for section*****/
 section {
@@ -58,6 +112,7 @@ section:nth-child(even) {
 
 /*#region hero*****/
 #hero {
+    padding-top: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
@@ -230,11 +285,11 @@ section:nth-child(even) {
 }
 
 #about-us .quotes {
-  font-size: 6rem;
+  font-size: 3rem;
   color: var(--brand-primary-color);
   position: absolute;
-  right: -30px;
-  top: -30px;
+  right: 0px;
+  top: -10px;
 }
 
 #about-us > div > div:last-child {
@@ -290,7 +345,16 @@ footer {
 /*#endregion footer*****/
 
 @media screen {
+    
   @media (max-width: 768px) {
+
+    /*#region header*****/
+    header {
+        position: fixed;
+        z-index: 1;
+        margin-top: -50px
+    }
+    /*#endregion header*****/
     /*#region hero*****/
 
     #hero [src*="phone"] {
@@ -334,6 +398,17 @@ footer {
 
 
   @media (max-width: 576px) {
+
+
+    /*#region header*****/
+    .menu {
+        width: 50%;
+        right: -50%;
+    }
+    [type="checkbox"]:checked + label {
+        right: 40%
+     }
+    /*#endregion header*****/
     /*#region hero*****/
 
     #hero {
@@ -354,6 +429,7 @@ footer {
       width: 100%;
     }
     /*#endregion hero*****/
+
     /*#region planning*****/
     #planning h2 {
       font-size: 3rem;
@@ -362,13 +438,16 @@ footer {
       margin-bottom: 3rem;
     }
     /*#endregion planning*****/
+
     /*#region testimonial*****/
     #testimonial .card {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
+    #testimonial h2 {
+        text-align: center;
+    }
     #testimonial .card .img-cropper {
       width: 200px;
       height: 200px;
@@ -378,6 +457,7 @@ footer {
         margin-top: 1rem
     }
     /*#endregion testimonial*****/
+
     /*#region working*****/
     #working .card-wrapper {
       grid-template-columns: repeat(1, 1fr);
@@ -399,6 +479,11 @@ footer {
     }
     #about-us > div > div:last-child p + a:before {
         margin-right: 1rem;
+    }
+    #about-us .quotes {
+        font-size: 6rem;
+        right:0;
+        top:0;
     }
     /*#endregion about us*****/
   }
